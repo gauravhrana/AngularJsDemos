@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Basic Http Authentication with Angular";
+}
+
+<h2>AngularJS Basic Http Authentication</h2>
+
+
+<div ng-app="BasicHttpAuthExample">
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-xs-offset-2 col-xs-8">
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <div class="credits text-center">
+        <p>
+            <a href="http://jasonwatmore.com/post/2014/05/26/AngularJS-Basic-HTTP-Authentication-Example.aspx">AngularJS Basic HTTP Authentication Example</a>
+        </p>
+        <p>
+            <a href="http://jasonwatmore.com">JasonWatmore.com</a>
+        </p>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-route.min.js"></script>
+    <script src="~/Scripts/angular-cookies.min.js"></script>
+
+    <script src="~/app/BasicHttpAuthentication/app.js"></script>
+    <script src="~/app/BasicHttpAuthentication/modules/authentication/services.js"></script>
+    <script src="~/app/BasicHttpAuthentication/modules/authentication/controllers.js"></script>
+    <script src="~/app/BasicHttpAuthentication/modules/home/HomeController.js"></script>
+
+}
